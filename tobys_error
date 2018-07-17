@@ -1,0 +1,82 @@
+Arduino: 1.8.5 (Mac OS X), Board: "NodeMCU 1.0 (ESP-12E Module), 80 MHz, 4M (1M SPIFFS), v2 Lower Memory, Disabled, None, Only Sketch, 115200"
+
+In file included from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:30:0,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseObject.h:109:21: error: 'StaticJsonBuffer' was not declared in this scope
+     std::shared_ptr<StaticJsonBuffer<FIREBASE_JSONBUFFER_SIZE>> buffer_;
+                     ^
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseObject.h:109:21: note: suggested alternative:
+In file included from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StaticJsonDocument.hpp:8:0,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.hpp:10,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:26,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Memory/StaticJsonBuffer.hpp:110:7: note:   'ArduinoJson::Internals::StaticJsonBuffer'
+ class StaticJsonBuffer : public Internals::StaticJsonBufferBase {
+       ^
+In file included from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/JsonObject.hpp:7:0,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/DynamicJsonDocument.hpp:8,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.hpp:9,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:26,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/./JsonObjectData.hpp:18:65: error: template argument 1 is invalid
+        sizeof(ArduinoJson::Internals::JsonObjectData::node_type))
+                                                                 ^
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseObject.h:28:34: note: in expansion of macro 'JSON_OBJECT_SIZE'
+ #define FIREBASE_JSONBUFFER_SIZE JSON_OBJECT_SIZE(32)
+                                  ^
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseObject.h:109:38: note: in expansion of macro 'FIREBASE_JSONBUFFER_SIZE'
+     std::shared_ptr<StaticJsonBuffer<FIREBASE_JSONBUFFER_SIZE>> buffer_;
+                                      ^
+In file included from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:30:0,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseObject.h:109:62: error: expected unqualified-id before '>' token
+     std::shared_ptr<StaticJsonBuffer<FIREBASE_JSONBUFFER_SIZE>> buffer_;
+                                                              ^
+In file included from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22:0,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:86:19: error: 'StaticJsonBuffer' was not declared in this scope
+   std::shared_ptr<StaticJsonBuffer<FIREBASE_JSONBUFFER_SIZE>> buffer_;
+                   ^
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:86:19: note: suggested alternative:
+In file included from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StaticJsonDocument.hpp:8:0,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.hpp:10,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:26,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Memory/StaticJsonBuffer.hpp:110:7: note:   'ArduinoJson::Internals::StaticJsonBuffer'
+ class StaticJsonBuffer : public Internals::StaticJsonBufferBase {
+       ^
+In file included from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/JsonObject.hpp:7:0,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/DynamicJsonDocument.hpp:8,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.hpp:9,
+                 from /Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:26,
+                 from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/./JsonObjectData.hpp:18:65: error: template argument 1 is invalid
+        sizeof(ArduinoJson::Internals::JsonObjectData::node_type))
+                                                                 ^
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseObject.h:28:34: note: in expansion of macro 'JSON_OBJECT_SIZE'
+ #define FIREBASE_JSONBUFFER_SIZE JSON_OBJECT_SIZE(32)
+                                  ^
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:86:36: note: in expansion of macro 'FIREBASE_JSONBUFFER_SIZE'
+   std::shared_ptr<StaticJsonBuffer<FIREBASE_JSONBUFFER_SIZE>> buffer_;
+                                    ^
+In file included from /Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/FirebaseArduino.h:22:0,
+                 from /Users/younghacks/Documents/Arduino/buzz_function/buzz_function.ino:2:
+/Users/younghacks/Documents/Arduino/libraries/firebase-arduino-master/src/Firebase.h:86:60: error: expected unqualified-id before '>' token
+   std::shared_ptr<StaticJsonBuffer<FIREBASE_JSONBUFFER_SIZE>> buffer_;
+                                                            ^
+exit status 1
+Error compiling for board NodeMCU 1.0 (ESP-12E Module).
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
